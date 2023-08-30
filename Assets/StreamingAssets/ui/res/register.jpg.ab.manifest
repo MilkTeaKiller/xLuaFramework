@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3653450699
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9743f7d8508ee245dff7e97706eef828
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ff414f606ea1972259b080d7bcf51689
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/BuildResources/UI/Res/register.jpg
+Dependencies: []

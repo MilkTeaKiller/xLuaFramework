@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 211916156
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: ui/prefab/image 1.prefab.ab
+      Dependencies: {}
+    Info_1:
+      Name: ui/prefab/image.prefab.ab
+      Dependencies: {}
+    Info_2:
+      Name: ui/res/play.jpg.ab
+      Dependencies: {}
+    Info_3:
+      Name: ui/res/register.jpg.ab
+      Dependencies: {}
+    Info_4:
+      Name: ui/res/start_up_01.png.ab
+      Dependencies: {}
+    Info_5:
+      Name: ui/res/start_up_01_txt.png.ab
+      Dependencies: {}
+    Info_6:
+      Name: ui/res/start_up_bg.jpg.ab
+      Dependencies: {}
