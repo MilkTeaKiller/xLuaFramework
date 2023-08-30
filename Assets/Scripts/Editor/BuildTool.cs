@@ -49,7 +49,7 @@ public class BuildTool : Editor
 
             //添加文件和依赖信息
             List<string> dependenceInfo = GetDependence(assetName);
-            string bundleInfo = assetName + "|" + bundleName;
+            string bundleInfo = assetName + "|" + bundleName + ".ab";
 
             if (dependenceInfo.Count > 0)
                 bundleInfo = bundleInfo + "|" + string.Join("|", dependenceInfo);

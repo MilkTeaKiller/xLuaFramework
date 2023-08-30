@@ -1,6 +1,6 @@
-Assets/BuildResources/UI/Prefabs/TestUI.prefab|ui/prefabs/testui.prefab|Assets/BuildResources/UI/Res/start_up_01.png|Assets/BuildResources/UI/Res/start_up_bg.jpg
-Assets/BuildResources/UI/Res/play.jpg|ui/res/play.jpg
-Assets/BuildResources/UI/Res/register.jpg|ui/res/register.jpg
-Assets/BuildResources/UI/Res/start_up_01.png|ui/res/start_up_01.png
-Assets/BuildResources/UI/Res/start_up_01_txt.png|ui/res/start_up_01_txt.png
-Assets/BuildResources/UI/Res/start_up_bg.jpg|ui/res/start_up_bg.jpg
+Assets/BuildResources/UI/Prefabs/TestUI.prefab|ui/prefabs/testui.prefab.ab|Assets/BuildResources/UI/Res/start_up_01.png|Assets/BuildResources/UI/Res/start_up_bg.jpg
+Assets/BuildResources/UI/Res/play.jpg|ui/res/play.jpg.ab
+Assets/BuildResources/UI/Res/register.jpg|ui/res/register.jpg.ab
+Assets/BuildResources/UI/Res/start_up_01.png|ui/res/start_up_01.png.ab
+Assets/BuildResources/UI/Res/start_up_01_txt.png|ui/res/start_up_01_txt.png.ab
+Assets/BuildResources/UI/Res/start_up_bg.jpg|ui/res/start_up_bg.jpg.ab
