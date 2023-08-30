@@ -61,12 +61,13 @@ public class ResourceManager : MonoBehaviour
                 yield return LoadBundleAsync(dependencies[i]);
             }
         }
-
         AssetBundleCreateRequest request = AssetBundle.LoadFromFileAsync(bundlePath);
         yield return request;
 
         AssetBundleRequest bundleRequest = request.assetBundle.LoadAssetAsync(assetName);
         yield return bundleRequest;
+
+        Debug.Log("This is PackageBundleLoadAsset.");
 
         //回调语法糖-作用同下 action?.Invoke(bundleRequest?.asset);
         if (action != null && bundleRequest != null)
@@ -75,9 +76,26 @@ public class ResourceManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 编辑器环境加载资源
+    /// </summary>
+    /// <param name="assetName"></param>
+    /// <param name="action"></param>
+    void EditorLoadAsset(string assetName, Action<UObject> action = null)
+    {
+        Debug.Log("This is EditorLoadAsset.");
+        UObject obj = UnityEditor.AssetDatabase.LoadAssetAtPath(assetName, typeof(UObject));
+        if (obj == null)
+            Debug.LogError("Asset name is not exist:" + assetName);
+        action?.Invoke(obj);
+    }
+
     private void LoadAsset(string assetName, Action<UObject> action)
     {
-        StartCoroutine(LoadBundleAsync(assetName, action));
+        if (AppConst.GameMode == GameMode.EditorMode)
+            EditorLoadAsset(assetName, action);
+        else
+            StartCoroutine(LoadBundleAsync(assetName, action));
     }
 
     //加载UI
