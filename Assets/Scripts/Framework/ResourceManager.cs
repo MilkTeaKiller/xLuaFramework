@@ -80,6 +80,8 @@ public class ResourceManager : MonoBehaviour
         StartCoroutine(LoadBundleAsync(assetName, action));
     }
 
+    //Tag:Ð¶ÔØÔÝÊ±²»×ö
+
     void Start()
     {
         ParseVersionFile();
