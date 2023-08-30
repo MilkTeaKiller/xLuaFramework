@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 3518665173
+CRC: 3650328284
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -22,3 +22,8 @@ AssetBundleManifest:
     Info_5:
       Name: ui/res/start_up_bg.jpg.ab
       Dependencies: {}
+    Info_6:
+      Name: ui/prefabs/login/loginui.prefab.ab
+      Dependencies:
+        Dependency_0: ui/res/start_up_01.png.ab
+        Dependency_1: ui/res/start_up_bg.jpg.ab

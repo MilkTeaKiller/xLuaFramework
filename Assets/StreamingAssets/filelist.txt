@@ -4,3 +4,4 @@ Assets/BuildResources/UI/Res/register.jpg|ui/res/register.jpg.ab
 Assets/BuildResources/UI/Res/start_up_01.png|ui/res/start_up_01.png.ab
 Assets/BuildResources/UI/Res/start_up_01_txt.png|ui/res/start_up_01_txt.png.ab
 Assets/BuildResources/UI/Res/start_up_bg.jpg|ui/res/start_up_bg.jpg.ab
+Assets/BuildResources/UI/Prefabs/Login/LoginUI.prefab|ui/prefabs/login/loginui.prefab.ab|Assets/BuildResources/UI/Res/start_up_01.png|Assets/BuildResources/UI/Res/start_up_bg.jpg

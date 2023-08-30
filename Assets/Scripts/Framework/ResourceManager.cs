@@ -75,9 +75,35 @@ public class ResourceManager : MonoBehaviour
         }
     }
 
-    public void LoadAsset(string assetName, Action<UObject> action)
+    private void LoadAsset(string assetName, Action<UObject> action)
     {
         StartCoroutine(LoadBundleAsync(assetName, action));
+    }
+
+    //加载UI
+    public void LoadUI(string assetName, Action<UObject> action = null)
+    {
+        LoadAsset(PathUtil.GetUIPath(assetName), action);
+    }
+    //加载音乐
+    public void LoadMusic(string assetName, Action<UObject> action = null)
+    {
+        LoadAsset(PathUtil.GetMusicPath(assetName), action);
+    }
+    //加载音效
+    public void LoadSound(string assetName, Action<UObject> action = null)
+    {
+        LoadAsset(PathUtil.GetSoundPath(assetName), action);
+    }
+    //加载特效
+    public void LoadEffect(string assetName, Action<UObject> action = null)
+    {
+        LoadAsset(PathUtil.GetEffectPath(assetName), action);
+    }
+    //加载场景
+    public void LoadScene(string assetName, Action<UObject> action = null)
+    {
+        LoadAsset(PathUtil.GetScenePath(assetName), action);
     }
 
     //Tag:卸载暂时不做
@@ -85,7 +111,7 @@ public class ResourceManager : MonoBehaviour
     void Start()
     {
         ParseVersionFile();
-        LoadAsset("Assets/BuildResources/UI/Prefabs/TestUI.prefab", OnComplete);
+        LoadUI("Login/LoginUI", OnComplete);
     }
 
     private void OnComplete(UObject obj)
